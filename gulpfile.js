@@ -47,8 +47,7 @@ function watchTask() {
   watch(["./css/*.css"], series(build, browsersyncReload));
 }
 
-const cleanCSS = () =>
-  exec("if exist docs/css cd docs && rd css /s /q");
+const cleanCSS = () => exec("if exist docs/css cd docs && rd css /s /q");
 
 // build files
 const build = series(cleanCSS, cssTasks);

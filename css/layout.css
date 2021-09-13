@@ -22,15 +22,14 @@ body > header {
   border-bottom: 1px solid rgb(194, 193, 193);
 }
 
-.heading-items{
+.heading-items {
   display: flex;
   column-gap: rfs(20px);
 }
 
-
 /* Artile rules start here */
 
-body .article{
+body .article {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -38,40 +37,39 @@ body .article{
   margin: 0 20px 0 110px;
 }
 
-body .article header{
+body .article header {
   grid-column: 3/12;
   grid-row: 1;
 }
 
-body .article .article-content{
+body .article .article-content {
   grid-column: 3/10;
   grid-row: 2;
   text-align: justify;
 }
 
-.article-content .article-content-share{
+.article-content .article-content-share {
   text-align: end;
 }
 
-.article-content .content-nav{
+.article-content .content-nav {
   display: flex;
   justify-content: space-between;
 }
 
-body .article .article-sidebar{
+body .article .article-sidebar {
   grid-column: 10/12;
   grid-row: 2;
   margin-left: 30px;
 }
 
-body .article-footer{
+body .article-footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgb(194, 193, 193);
 }
 
-
-svg{
+svg {
   width: 20px;
   height: 20px;
 }
