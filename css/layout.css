@@ -27,7 +27,8 @@ body > header {
   column-gap: rfs(20px);
 }
 
-/* Artile rules start here */
+
+/* for Desktop */
 
 body .article {
   flex: 1;
@@ -68,6 +69,59 @@ body .article-footer {
   justify-content: space-between;
   border-top: 1px solid rgb(194, 193, 193);
 }
+
+
+/* for mobile */
+@media screen and (max-width: 768px) {
+  body > header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .heading-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0 0 10px 10px;
+  }
+
+  body .article {
+    margin: 0 20px 30px 20px;
+  }
+
+  body .article header {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  
+  body .article .article-content {
+    grid-column: 1/-1;
+    grid-row: 2;
+    text-align: justify;
+  }
+
+  body .article .article-sidebar {
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin-left: 0px;
+  }
+
+  body .article-footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(194, 193, 193);
+  }
+
+  body .article-footer p{
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+  }
+}
+
 
 svg {
   width: 20px;
