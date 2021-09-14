@@ -55,6 +55,7 @@ body .article .article-content {
 
 .article-content .content-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
