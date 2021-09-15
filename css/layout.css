@@ -27,7 +27,6 @@ body > header {
   column-gap: rfs(20px);
 }
 
-
 /* for Desktop */
 
 body .article {
@@ -71,7 +70,6 @@ body .article-footer {
   border-top: 1px solid rgb(194, 193, 193);
 }
 
-
 /* for mobile */
 @media screen and (max-width: 768px) {
   body > header {
@@ -97,7 +95,7 @@ body .article-footer {
     grid-column: 1/-1;
     grid-row: 1;
   }
-  
+
   body .article .article-content {
     grid-column: 1/-1;
     grid-row: 2;
@@ -116,13 +114,12 @@ body .article-footer {
     border-top: 1px solid rgb(194, 193, 193);
   }
 
-  body .article-footer p{
+  body .article-footer p {
     margin: 0px;
     padding: 4px;
     text-align: center;
   }
 }
-
 
 svg {
   width: 20px;

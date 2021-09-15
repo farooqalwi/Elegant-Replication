@@ -6,6 +6,7 @@ const magician = require("postcss-font-magician");
 const rfs = require("rfs/postcss");
 const browsersync = require("browser-sync").create();
 const exec = require("child_process").exec;
+const postcssPresetEnv = require("postcss-preset-env");
 
 // Task to minify css using package cssmin
 function cssTasks() {
@@ -13,6 +14,17 @@ function cssTasks() {
   return (
     src("./css/*.css")
       //The method pipe() allow you to chain multiple tasks together
+      .pipe(
+        postcss([
+          postcssPresetEnv({
+            /* use stage 3 features + css nesting rules */
+            stage: 3,
+            features: {
+              "nesting-rules": true,
+            },
+          }),
+        ])
+      )
       //It executes the task to minify the files
       .pipe(cssmin())
       //magician generates all @font-face rules. We never have to write a @font-face rule again.
