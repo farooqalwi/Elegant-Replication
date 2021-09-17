@@ -29,34 +29,38 @@ body {
 
 /* for Desktop css rules start here*/
 
-& .article {
+& .article, & .categories {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto minmax(0,1fr);
   margin: 0 20px 0 110px;
 
 
   & header {
   grid-column: 3/12;
   grid-row: 1;
-  margin-left: 30px;
+  padding: 0;
 }
 
 & .article-toc {
   grid-column: 1/3;
   grid-row: 2;
+  margin-right: 30px;
 
   & .article-toc-lists{
     padding: 0;
   }
 }
 
-& .article-content {
+& .article-content, & .categories-list {
   grid-column: 3/10;
   grid-row: 2;
-  text-align: justify;
-  margin-left: 30px;
+  text-align: justify;  
+}
+
+& .categories-list{
+  
 }
 
 & .article-content .article-content-share {
@@ -111,7 +115,7 @@ body {
   }
 }
 
-& .article {
+& .article, & .categories {
     margin: 0 20px 30px 20px;
   
 
@@ -121,7 +125,7 @@ body {
     margin: 0;
   }
 
-  & .article-toc {
+  & .article-toc, & .categories-list {
     grid-column: 1/-1;
     grid-row: 2;
 
