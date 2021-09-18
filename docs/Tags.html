@@ -4,27 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Home 3</title>
+    <title>Tags</title>
 </head>
 
 <body>
 
     <header>
-        <h3>This is header</h3>
-        <a href="index.html">Home</a>
-        <a href="index2.html">Home 2</a>
-        <a href="index3.html">Home 3</a>
-        <a href="article.html">Article</a>
+        <section class="header-heading">
+            <a href="./index.html">
+                <h3>Elegant</h3>
+            </a>
+        </section>
+        <nav class="heading-items">
+            <a href="./index.html">Home</a>
+            <a href="./Categories.html">Categories</a>
+            <a href="./Tags.html">Tags</a>
+            <a href="./Archives.html">Archives</a>
+            <input type="text" placeholder="Search">
+        </nav>
     </header>
 
-    <section class="home3">
+    <section class="tags">
         <header>
-            <h1>I am a Polyglot Seasoned Software Engineer</h1>
+            <h1>All Tags</h1>
             <hr>
         </header>
 
-        <section class="home3-recent-posts">
-            <h1>Recent Posts</h1>
+        <section class="tags-list">
+            <br>
+            <input type="text" placeholder="Find a tag">
+            <h1>dummy data</h1>
             <p>
                 pip — List Of Apps To Install <br>
                 posted in Notes To Self Jul 12, 2020
@@ -58,36 +67,12 @@
                 <hr>
             </p>
         </section>
-
-        <section class="home3-projects">
-            <h1>My Projects</h1>
-            <p>
-                Coding School A project to teach programming using C#
-                <hr>
-                Elegant A clean and distraction free Pelican theme, with search and a lot more unique features. Built
-                with Jinja2 and Bootstrap
-                <hr>
-                extract_toc A Pelican plugin to extract table of contents
-                <hr>
-                tipue_search A Pelican plugin to serialize generated HTML to a JavaScript variable that can be used by
-                jQuery plugin - Tipue Search
-                <hr>
-                share_post A Pelican plugin to create share URLs of article
-                <hr>
-                goodreads_activity A Pelican plugin to lists books from your GoodReads shelves
-                <hr>
-                TiddlyWiki My contributions to TiddlyWiki, a self-contained JavaScript wiki
-                <hr>
-                Pelican Plugins My contributions to plugins for Pelican blog engine
-                <hr>
-                Pelican Static site generator that supports Markdown and reST syntax
-
-            </p>
-        </section>
     </section>
 
-    <footer>
-        <h3>This is footer</h3>
+    <footer class="footer">
+        <p>Content licensed under <a href="#">Creative Commons Attribution 4.0 International License</a>.</p>
+        <p>Elegant - The Best Pelican Theme</p>
+        <p>Powered by: <a href="#">Pelican</a> Theme: <a href="#">Elegant</a> Hosted on: <a href="#">Netlify</a></p>
     </footer>
 
 </body>
