@@ -15,13 +15,19 @@
                 <h3>Elegant</h3>
             </a>
         </section>
-        <section class="heading-items">
-            <a href="./index.html">Home</a>
-            <a href="./Categories.html">Categories</a>
-            <a href="#">Tags</a>
-            <a href="#">Archives</a>
-            <input type="text" placeholder="Search">
-        </section>
+        <div class="nav-tab">
+            <div class="navbar-toggle">
+                <input id="nav-toggle" type="checkbox">
+                <label for="nav-toggle">|||</label>
+            </div>
+            <nav class="heading-items">
+                <a href="./index.html">Home</a>
+                <a href="./Categories.html">Categories</a>
+                <a href="./Tags.html">Tags</a>
+                <a href="./Archives.html">Archives</a>
+                <input type="text" placeholder="Search">
+            </nav>
+        </div>
     </header>
 
     <section class="categories">
@@ -31,17 +37,117 @@
         </header>
 
         <section class="categories-list">
-            <ul>
-                <li><a href="#">101 — Quick Start</a></li>
-                <li><a href="#">Advanced Features</a></li>
-                <li><a href="#">Analytics, SEO and SMO</a></li>
-                <li><a href="#">Components</a></li>
-                <li><a href="#">Connecting With Your Readers</a></li>
-                <li><a href="#">Contributing</a></li>
-                <li><a href="#">Monetizing Your Blog</a></li>
-                <li><a href="#">Release Notes</a></li>
-                <li><a href="#">Supported Plugins</a></li>
+            <ul class="accordian">
+                <li class="tab">
+                    <input id="tab-1" type="radio" name="tabr">
+                    <label for="tab-1">101 — Quick Start</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-2" type="radio" name="tabr">
+                    <label for="tab-2">Advanced Features</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-3" type="radio" name="tabr">
+                    <label for="tab-3">Analytics, SEO and SMO</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-4" type="radio" name="tabr">
+                    <label for="tab-4">Components</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-5" type="radio" name="tabr">
+                    <label for="tab-5">Connecting With Your Readers</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-6" type="radio" name="tabr">
+                    <label for="tab-6">Contributing</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-7" type="radio" name="tabr">
+                    <label for="tab-7">Monetizing Your Blog</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-8" type="radio" name="tabr">
+                    <label for="tab-8">Release Notes</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input id="tab-9" type="radio" name="tabr">
+                    <label for="tab-9">Supported Plugins</label>
+                    <div class="tab-content">
+                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my
+                            CSS
+                            reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of
+                            Slim
+                            for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS.
+                            Regardless, this could all be done in plain HTML and CSS.</p>
+                    </div>
+                </li>
             </ul>
+
         </section>
 
     </section>

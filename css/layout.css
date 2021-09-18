@@ -29,7 +29,7 @@ body {
 
 /* for Desktop css rules start here*/
 
-& .article, & .categories {
+& .article, & .categories, & .tags, & .archives {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -53,15 +53,12 @@ body {
   }
 }
 
-& .article-content, & .categories-list {
+& .article-content, & .categories-list, & .tags-list, & .archives-list {
   grid-column: 3/10;
   grid-row: 2;
   text-align: justify;  
 }
 
-& .categories-list{
-  
-}
 
 & .article-content .article-content-share {
   text-align: end;
@@ -115,7 +112,7 @@ body {
   }
 }
 
-& .article, & .categories {
+& .article, & .categories, & .tags, & .archives{
     margin: 0 20px 30px 20px;
   
 
@@ -125,7 +122,7 @@ body {
     margin: 0;
   }
 
-  & .article-toc, & .categories-list {
+  & .article-toc, & .categories-list, & .tags-list, & .archives-list {
     grid-column: 1/-1;
     grid-row: 2;
 

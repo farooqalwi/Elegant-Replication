@@ -1,0 +1,49 @@
+.categories-list .accordian{
+    list-style-type: none;
+    padding: 0;
+
+    & .tab {
+        position: relative;
+        max-width: 100%;
+        border: 1px solid gray;
+        border-radius: 4px;
+        margin-bottom: 2px;
+
+        & input { display: none; }
+
+        & label {
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid gray;
+          }
+
+          & .tab-content {
+            overflow: hidden;
+            transition: max-height 0.3s;
+            max-height: 0;
+          }
+
+          & input:checked ~ .tab-content { max-height: 100vh; }
+      }
+}
+  
+  .navbar-toggle{
+      display: none;
+  }
+/* for Mobile css rules start here*/
+@media screen and (max-width: 768px) {
+    .navbar-toggle{
+        display: contents;
+        
+        & input{
+            display: none;
+        }
+    }
+
+    .nav-tab .heading-items {
+        display: none;
+      }
+
+      & .navbar-toggle input:checked ~ .nav-tab .heading-items{display: contents;}
+}
