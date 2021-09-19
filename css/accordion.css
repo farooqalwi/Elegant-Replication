@@ -1,4 +1,4 @@
-.categories-list .accordian{
+.categories .categories-list .accordian{
     list-style-type: none;
     padding: 0;
 
@@ -28,22 +28,28 @@
       }
 }
   
-  .navbar-toggle{
+  .nav-toggle{
       display: none;
   }
 /* for Mobile css rules start here*/
 @media screen and (max-width: 768px) {
-    .navbar-toggle{
+
+    .nav-toggle{
         display: contents;
-        
-        & input{
-            display: none;
-        }
     }
 
-    .nav-tab .heading-items {
-        display: none;
+  .nav-tab{
+      & input { display: none; }
+
+      & .heading-items {
+        overflow: hidden;
+        transition: max-height 0.3s;
+        max-height: 0;
+        padding: 0;
+        padding-top: 10px;
+        
       }
 
-      & .navbar-toggle input:checked ~ .nav-tab .heading-items{display: contents;}
+      & input:checked ~ .heading-items { max-height: 100vh; }
+    }
 }
