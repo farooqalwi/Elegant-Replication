@@ -11,20 +11,27 @@ body {
 
 
   & header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: rfs(0 25px);
-  margin: 0;
-  height: rfs(44px);
-  border-bottom: 1px solid rgb(194, 193, 193);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rfs(0 25px);
+    margin: 0;
+    height: rfs(44px);
+    
+    & ul{
+      list-style: none;
+      overflow: hidden;
+      clear: both;
 
-
-  & .heading-items {
-  display: flex;
-  column-gap: rfs(20px);
-}
+      & li{
+        display: inline-block;
+        padding: rfs(0px 20px);
+        
+        & a{
+          text-decoration: none;
+        }
+      }
+    }
 }
 
 /* for Desktop css rules start here*/
@@ -95,22 +102,7 @@ body {
 
 /* for Mobile css rules start here*/
 @media screen and (max-width: 768px) {
-  body{ 
-  & header {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-align: left;
-    align-items: flex-start;
-  
-
-    & .heading-items {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 0 0 10px 10px;
-  }
-}
+  body{
 
 & .article, & .categories, & .tags, & .archives{
     margin: 0 20px 30px 20px;
