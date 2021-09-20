@@ -1,64 +1,16 @@
-.header .menu-icon {
+
+header .header-title .menu-btn {
   display: none;
 }
 
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-.header .menu-btn {
+header .header-title .menu-icon {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
+@media (max-width: 768px) {
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-@media (max-width: 48em) {
-  
-  .header .menu-icon {
+  header .header-title .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -66,4 +18,40 @@
     position: relative;
     user-select: none;
   }
+
+  header .header-title .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  header .header-title .menu-icon .navicon:before,
+  header .header-title .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  header .header-title .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  header .header-title .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+
+
+  
 }
+
+
+
+
