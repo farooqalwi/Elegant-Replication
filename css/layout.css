@@ -21,7 +21,7 @@ body {
   border-bottom: 1px solid rgb(194, 193, 193);
 
 
-  & .nav-tab {
+  & .nav-links {
   display: flex;
   column-gap: rfs(20px);
 }
@@ -104,7 +104,7 @@ body {
     align-items: flex-start;
   
 
-    & .nav-tab {
+    & .nav-links {
     display: flex;
     flex-direction: column;
     row-gap: 10px;

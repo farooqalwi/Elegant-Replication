@@ -1,57 +1,93 @@
+* {
+  box-sizing: border-box;
 
-header .header-title .menu-btn {
-  display: none;
-}
+  & .nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
 
-header .header-title .menu-icon {
-  display: none;
+    & #nav-check {
+      display: none;
+    }
+
+    & .nav-header {
+      display: inline;
+      display: inline-block;
+      font-size: 22px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    & .nav-btn {
+      display: none;
+    }
+
+    & .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+
+      & a {
+        display: inline-block;
+        padding: 13px 10px;
+        text-decoration: none;
+        color: #000;
+      }
+
+      & a:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
 }
 
 
 @media (max-width: 768px) {
+  .nav{
+    & .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
 
-  header .header-title .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
+      & label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+
+        & span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid #333;
+        }
+      }
+    }
+
+    & .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #efe3d0;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 40px;
+      left: 0px;
+
+      & a {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    & #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+
+    & #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 350px);
+      overflow-y: auto;
+    }
   }
-
-  header .header-title .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-
-  header .header-title .menu-icon .navicon:before,
-  header .header-title .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-
-  header .header-title .menu-icon .navicon:before {
-    top: 5px;
-  }
-
-  header .header-title .menu-icon .navicon:after {
-    top: -5px;
-  }
-
-
-
-  
 }
-
-
-
-
