@@ -3,34 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>NavBar</title>
 </head>
 
 <body>
-
-    <header class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <a href="./index.html">Elegant</a>
-        </div>
-
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-
-        <div class="nav-links">
-            <a href="./index.html">Home</a>
-            <a href="./Categories.html">Categories</a>
-            <a href="./Tags.html">Tags</a>
-            <a href="./Archives.html">Archives</a>
-            <input type="text" placeholder="Search">
-        </div>
+    <header class="header">
+        <a href="./index.html" class="logo">Elegant</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Categories.html">Categories</a></li>
+            <li><a href="./Tags.html">Tags</a></li>
+            <li><a href="./Archives.html">Archives</a></li>
+            <li><input type="text" placeholder="Search"></li>
+        </ul>
     </header>
 
     <article class="article">
@@ -193,6 +183,7 @@
         <p>Elegant - The Best Pelican Theme</p>
         <p>Powered by: <a href="#">Pelican</a> Theme: <a href="#">Elegant</a> Hosted on: <a href="#">Netlify</a></p>
     </footer>
+
 
 </body>
 
